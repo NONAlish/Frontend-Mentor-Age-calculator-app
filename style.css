@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Figtree:wght@400;800&family=Hanken+Grotesk:ital,wght@0,500;1,700;1,800&family=Inter:wght@400;700&family=Lexend+Deca&family=Overpass:ital,wght@0,400;0,700;1,700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 840px;
+    background-color: white;
+    border-radius: 0px 0px 300px 0px;
+}
+main{
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.card > .p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400 italic;
+}
+
+.paragraph{
+    color: #716F6F;
+}
+
+.card > input {
+    border: 1px solid #DCDCDC;
+    width: 130px;
+    height: 72px;
+    padding-left: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.hr_with_arrow{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+}
+.hr{
+    margin-top: 50px;
+    width: 100%;
+    height: 1px;
+    background-color: #DCDCDC;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border-radius: 50%;
+}
+
+.main_text{
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text_1{
+    display: flex;
+    font-size: 100px;
+}
+.text_1_p{
+    color: #854DFF;
+    letter-spacing: 1.0rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+.paragraph{
+    font-family: 'Poppins', sans-serif;
+}
+.error{
+    padding-top: 5px;
+    color: #FF5959;
+    opacity: 0;
+    font-size: 18px;
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 500px;
+        border-radius: 30px 30px 100px 30px;
+    }
+    main{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 3rem;
+    }
+    .hr_with_arrow{
+        position: relative;
+        margin-bottom: 70px;
+    }
+    .btn{
+        position: absolute;
+        left: 10rem;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .card > .input{
+        width: 5.5rem;
+        height: 4rem;
+        font-size: 16px;
+    }
+    .main_text > .text_1{
+        font-size: 75px;
+    }
+}
